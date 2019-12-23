@@ -23,6 +23,7 @@ declare global {
 
 // We use the global willLoadBrowserFS variable to signal that we are going to
 // initialize BrowserFS.
+self.window = self;
 (window as any).willLoadBrowserFS = true;
 
 BrowserFS.configure(

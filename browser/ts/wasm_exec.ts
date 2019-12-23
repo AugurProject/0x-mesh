@@ -4,6 +4,7 @@
 
 /* tslint:disable */
 (() => {
+    self.window = self;
     if (typeof global !== 'undefined') {
         // global already exists
     } else if (typeof window !== 'undefined') {
